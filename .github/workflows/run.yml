@@ -4,8 +4,11 @@ jobs:
   gcd-test:
     runs-on: ubuntu-latest
     steps:
-      - name: test1:gcd 2 and 4
-        working-directory: ~
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: Permission Setting
+        run: chmod +x test1.sh test2.sh test3.sh
+        name: test1:gcd 2 and 4
         run: ./test1.sh
       - name: test2:gcd 3
         run: ./test2.sh
