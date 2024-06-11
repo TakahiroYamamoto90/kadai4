@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test1:gcd 2 and 4
+        working-directory: ~
         run: ./test1.sh
       - name: test2:gcd 3
         run: ./test2.sh
