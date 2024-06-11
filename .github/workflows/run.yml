@@ -1,7 +1,7 @@
 name: actions-trial
 on: [push]
 jobs:
-  gcd test:
+  gcd-test:
     runs-on: ubuntu-latest
     steps:
       - name: test1:gcd 2 and 4
