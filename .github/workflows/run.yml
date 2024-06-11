@@ -7,7 +7,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
       - name: Permission Setting
-        run: chmod +x test1.sh test2.sh test3.sh
+        run: chmod +x gcd.sh test1.sh test2.sh test3.sh
       - name: test1:gcd 2 and 4
         run: ./test1.sh
       - name: test2:gcd 3
