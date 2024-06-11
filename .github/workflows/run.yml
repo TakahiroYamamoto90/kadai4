@@ -1,11 +1,11 @@
 name: actions-trial
 on: [push]
 jobs:
-  check-bats-version:
+  gcd test:
     runs-on: ubuntu-latest
     steps:
       - name: test1:gcd 2 and 4
-        run: ./test1.sh
+        run: test1.sh
       - name: test2:gcd 3
         run: test2.sh
       - name: test3:gcd a and b
